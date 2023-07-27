@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="id" class="dark">
+<html lang="id" class="">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('storage/css/root.css') }}">
-		<title></title>
-	@stack('style')
-	@vite('resources/css/app.css')
+    <title></title>
+    @stack('styles')
+    @vite('resources/css/app.css')
 </head>
 
 <body class="h-screen w-full bg-zinc-50 dark:bg-slate-900 grid grid-cols-1 md:grid-cols-8 xl:grid-cols-6 grid-rows-12">
@@ -27,7 +27,7 @@
         @include('user.layouts.partials.sidebar-right')
     </aside>
 
-@stack('script')
+    @stack('script')
 </body>
 
 </html>
